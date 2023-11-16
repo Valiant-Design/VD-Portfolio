@@ -188,6 +188,7 @@ body.dark-theme {
 .section__title-2 {
   position: relative;
   font-size: var(--h1-font-size);
+  color: var(--first-color);
   width: max-content;
   margin: 0.75rem auto 2rem;
 }
@@ -265,6 +266,7 @@ body.dark-theme {
 
 .nav__logo-name {
   color: hsl(0, 0%, 100%);
+  font-size: x-large;
 }
 
 .nav__logo-circle,
@@ -546,17 +548,17 @@ body.dark-theme {
   background: linear-gradient(90deg, hsla(277, 73%, 47%, 0.397), hsla(14, 98%, 50%, 0));
 } */
 
-.home__scroll {
+/* .home__scroll {
   display: block;
   width: max-content;
   margin: 0 auto;
-}
+} */
 
 .home__social-text {
   display: none;
 }
 
-.home__scroll-box {
+/* .home__scroll-box {
   background-color: var(--black-color);
   color: var(--white-color);
   width: 36px;
@@ -567,11 +569,11 @@ body.dark-theme {
   cursor: pointer;
   overflow: hidden;
   transition: background-color 0.4s;
-}
+} */
 
-.home__scroll-box i {
+/* .home__scroll-box i {
   animation: scroll-down 3s infinite;
-}
+} */
 
 /* Animate scroll icon */
 @keyframes scroll-down {
@@ -943,11 +945,13 @@ body.dark-theme {
 
 .contact__data {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   background-color: var(--container-color);
   padding: 3rem 1.5rem 3.5rem;
   margin-left: auto;
+  margin-right: auto;
+  border-top: 4px solid var(--first-color);
   border-bottom: 4px solid var(--first-color);
   z-index: 5;
   transition: background-color 0.4s;
@@ -955,7 +959,8 @@ body.dark-theme {
 
 .contact__data .section__title-2 {
   margin: 0 0 1.5rem;
-  transform: translateX(-3rem);
+  transform: translateX(-0.5rem);
+  color: var(--first-color);
 }
 
 .contact__description-1 {
@@ -1201,10 +1206,11 @@ body.dark-theme {
   position: fixed;
   right: 1rem;
   bottom: -50%;
-  background-color: hsl(277, 100%, 50%);
+  background-color: var(--first-color);
   display: inline-flex;
-  padding: 8px;
-  font-size: 1.25rem;
+  padding: 12px;
+  font-size: 1.5rem;
+  border-radius: 15rem;
   color: var(--white-color);
   z-index: var(--z-tooltip);
   transition: bottom 0.4s, transform 0.4s, background-color 0.4s;
@@ -1212,6 +1218,7 @@ body.dark-theme {
 
 .scrollup:hover {
   transform: translateY(-0.5rem);
+  background-color: hsl(277, 100%, 33%);
 }
 
 /* Show Scroll Up */
@@ -1505,32 +1512,32 @@ body.dark-theme {
     background-color: var(--new-color);
   }
 
-  .home__scroll {
+  /* .home__scroll {
     margin: 0;
     display: flex;
     align-items: center;
     column-gap: 0.75rem;
-  }
+  } */
 
-  .home__scroll-text {
+  /* .home__scroll-text {
     display: block;
     color: var(--text-color);
     font-size: var(--smaller-font-size);
     font-weight: var(--font-medium);
-  }
+  } */
 
-  .home_-scroll-box {
+  /* .home_-scroll-box {
     width: 44px;
     height: 44px;
-  }
+  } */
 
-  .home__scroll-box i {
+  /* .home__scroll-box i {
     font-size: 1.25rem;
-  }
+  } */
 
-  .home__perfil {
+  /* .home__perfil {
     top: 15re;
-  }
+  } */
 
   /* .home__arrow{
     top: 4.5rem;
@@ -1773,7 +1780,7 @@ body.dark-theme {
 
   .contact__data .section__title-2 {
     margin: 0 0 2rem;
-    transform: translateX(-6.5rem);
+    transform: translateX(-1.5rem);
   }
 
   .contact__social {
@@ -1807,7 +1814,11 @@ body.dark-theme {
   .footer__container {
     padding-block: 4rem;
     grid-template-columns: repeat(2, max-content);
-    justify-content: space-between;
+    justify-content: center;
+  }
+
+  .footer__copy__text{
+    font-size: larger;
   }
 
   .footer__links {
