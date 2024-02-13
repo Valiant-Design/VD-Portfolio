@@ -7,7 +7,8 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(276.9, 87.4%, 53.3%);
+  /* --first-color: hsl(276.9, 87.4%, 53.3%); */
+  --first-color: #55c2c3;
   --black-color: hsl(0, 0%, 0%);
   --black-color-light: hsl(0, 0%, 40%);
   --white-color: hsl(0, 0%, 95%);
@@ -16,7 +17,7 @@
   --text-color-light: hsl(0, 0%, 64%);
   --body-color: hsl(0, 0%, 87%);
   --container-color: hsl(0, 0%, 83%);
-  --new-color: hsl(277, 100%, 50%);
+  --new-color: #1acfd2;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -110,7 +111,7 @@ img {
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  --first-color: hsl(276.9, 87.4%, 53.3%);
+  --first-color: #55c2c3;
   --black-color: hsl(0, 0%, 18%);
   --black-color-light: hsl(0, 0%, 30%);
   --title-color: hsl(0, 0%, 95%);
@@ -146,7 +147,8 @@ body.dark-theme {
 
 .dark-theme .projects__card:hover {
   background-color: var(--body-color);
-  box-shadow: 0 5px 15px #afe0f5;
+  border: 2px solid white;
+  /* box-shadow: 0 5px 15px #afe0f5; */
 }
 
 .dark-theme :is(.contact__mail, .contact__input, .contact__label) {
@@ -243,7 +245,7 @@ body.dark-theme {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: hsl(277, 95%, 54%);
+  background-color: #55c2c3;
   z-index: var(--z-fixed);
   transition: box-shadow 0.4s, background-color 0.4s;
 }
@@ -274,7 +276,7 @@ body.dark-theme {
   width: 32px;
   height: 32px;
   background-color: var(--white-color);
-  color: hsl(277, 73%, 47%);
+  color: #55c2c3;
   display: grid;
   place-items: center;
 }
@@ -293,7 +295,7 @@ body.dark-theme {
     position: fixed;
     top: -100%;
     left: 0;
-    background-color: hsla(277, 95%, 54%, 0.413);
+    background-color: #1ac5c8;
     width: 100%;
     padding-block: 1.8rem 5rem;
     text-align: center;
@@ -386,7 +388,7 @@ body.dark-theme {
 
 /* Add shadow header */
 .shadow-header {
-  box-shadow: 0 1px 16px hsla(277, 100%, 50%, 0.747);
+  box-shadow: 0 1px 16px #55c2c3;
 }
 
 /* Active link */
@@ -410,7 +412,7 @@ body.dark-theme {
 }
 
 .auto-type {
-  color: hsl(277, 73%, 47%);
+  color:#55c2c3;
 }
 
 .home__perfil {
@@ -527,7 +529,7 @@ body.dark-theme {
 }
 
 .home__social-link:hover {
-  background-color: hsl(276.9, 87.4%, 53.3%);
+  background-color:#55c2c3;
 }
 
 .home__info {
@@ -541,7 +543,7 @@ body.dark-theme {
 }
 
 .home__description b {
-  color: hsl(277, 73%, 47%);
+  color:#55c2c3;
 }
 
 /* .home__description b{
@@ -791,30 +793,30 @@ body.dark-theme {
   z-index: 5;
   position: relative;
   /* transition: backgound-color .4s, border .4s; */
-  transition: transform 0.7s ease-in-out;
-  cursor: pointer;
+  /* transition: transform 0.7s ease-in-out; */
+  /* cursor: pointer; */
 }
 
-.services__card:hover .services__content {
+/* .services__card:hover .services__content {
   transform: scale(1.1);
   border: none;
-  background-color: hsl(276.9, 87.4%, 53.3%);
+  background-color: #55c2c3;
   color: var(--white-color);
-}
+} */
 
-.services__card:hover .services__title {
+/* .services__card:hover .services__title {
   color: var(--white-color);
-}
+} */
 
-.services__card:hover i {
+/* .services__card:hover i {
   transform: scale(1.1);
   color: var(--white-color);
-}
+} */
 
-.services__card:hover .services__box {
+/* .services__card:hover .services__box {
   transform: scale(1.1);
   background-color: hsla(277, 100%, 76%, 0.662);
-}
+} */
 
 .services__icon {
   position: relative;
@@ -929,7 +931,7 @@ body.dark-theme {
 
 .projects__card:hover {
   background-color: var(--white-color);
-  box-shadow: 0 5px 15px #ea01ff;
+  /* box-shadow: 0 5px 15px #1be3e7; */
 }
 
 /*=============== CONTACT ===============*/
@@ -1074,8 +1076,8 @@ body.dark-theme {
 }
 
 .contact__button:hover {
-    box-shadow: 1px 3px 13px #bf00ff;
-  }
+    box-shadow: 1px 3px 13px #55c2c3;
+}
 
 /* Opaque placeholder */
 .contact__input:focus::placeholder {
@@ -1151,7 +1153,7 @@ body.dark-theme {
 
 /*=============== FOOTER ===============*/
 .footer {
-  background-color: hsl(277, 100%, 25%);
+  background-color: #55c2c3;
 }
 
 .footer__container {
@@ -1175,7 +1177,7 @@ body.dark-theme {
 }
 
 .footer__copy {
-  color: var(--text-color-light);
+  color: white;
   font-size: var(--small-font-size);
   text-align: center;
 }
@@ -1218,7 +1220,7 @@ body.dark-theme {
 
 .scrollup:hover {
   transform: translateY(-0.5rem);
-  background-color: hsl(277, 100%, 33%);
+  background-color: #0bbdc0;
 }
 
 /* Show Scroll Up */
@@ -1420,7 +1422,7 @@ body.dark-theme {
   }
 
   .auto-type {
-    color: hsl(277, 73%, 47%);
+    color: #55c2c3;
   }
 
   .home__perfil {
@@ -1767,7 +1769,7 @@ body.dark-theme {
   }
 
   .contact__button:hover {
-    box-shadow: 1px 3px 13px #bf00ff;
+    box-shadow: 1px 3px 13px #55c2c3;
   }
 
   .contact__data {
